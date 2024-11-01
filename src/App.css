@@ -1,0 +1,123 @@
+/* General reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* App container */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Light background for the entire app */
+}
+
+/* Header styling */
+header {
+  background-color: #3B82F6; /* Soft blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  background-color: #3B82F6;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Discount Calculator styling */
+.discount-calculator {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discount-calculator h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1D4ED8;
+}
+
+.discount-calculator label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1E293B;
+}
+
+.discount-calculator input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #cbd5e1;
+  font-size: 1em;
+  background-color: #f1f5f9;
+}
+
+/* Button group with spacing */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Button styling */
+.discount-calculator button {
+  flex: 1;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Calculate button specific styling */
+.discount-calculator .calculate-button {
+  background-color: #2563EB; /* Medium blue */
+}
+
+.discount-calculator .calculate-button:hover {
+  background-color: #1D4ED8; /* Darker blue */
+}
+
+/* Reset button specific styling */
+.reset-button {
+  background-color: #E11D48; /* Bright red */
+}
+
+.reset-button:hover {
+  background-color: #BE123C; /* Darker red on hover */
+}
+
+.discount-calculator .info {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #64748b;
+}
+
+.discount-calculator h2 {
+  color: #3B82F6;
+  margin-top: 15px;
+  font-size: 1.5em;
+  text-align: center;
+}
